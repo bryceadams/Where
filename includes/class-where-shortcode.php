@@ -50,7 +50,7 @@ class Where_Shortcode {
 
 		    	<div class="where-time">
 					<?php
-					$timezone 		= where_get_nearest_timezone( $lat[0], $lon[0], $iso[0] );
+					$timezone 		= where_get_nearest_timezone( $lat[0], $long[0], $iso[0] );
 					$time_get		= wp_remote_get( 'http://api.timezonedb.com/?zone=' . $timezone . '&format=json&key=' . WHERE_TZDB_API_KEY );
 					$time_body 		= json_decode( wp_remote_retrieve_body( $time_get ) );
 					$time_os_raw	= $time_body->gmtOffset / 60 / 60; // (hours)
