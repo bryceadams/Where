@@ -1,0 +1,16 @@
+#map_canvas {
+	height: 400px;
+	width: 100%;
+	border: 1px solid #ddd;
+	margin: 1em 0 0 0;
+}
+
+.where-time .offset {
+	color: #bbb;
+	font-size: 2rem;
+}
+
+.where-locations td.location .dashicons {
+	font-size: 16px;
+	vertical-align: bottom;
+}
